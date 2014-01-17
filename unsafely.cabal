@@ -1,5 +1,5 @@
 name:                unsafely
-version:             0.1.0.0
+version:             0.1.0.0.1
 synopsis:            Flexible access control for unsafe operations and instances
 description:         This module aims at providing simple interface to control the acccess for /unsafe/
                      operations and instance.
@@ -24,7 +24,7 @@ flag examples
 
 source-repository head
   type: git
-  location: git://github.com/ekmett/lens.git
+  location: git://github.com/konn/unsafely.git
 
 library
   exposed-modules:     Data.Constraint.Unsafely, Data.Constraint.Unsafely.Really
