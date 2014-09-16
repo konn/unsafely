@@ -1,5 +1,5 @@
-{-# LANGUAGE FlexibleContexts, FlexibleInstances, PolyKinds, RankNTypes #-}
-{-# LANGUAGE ScopedTypeVariables, UndecidableInstances                  #-}
+{-# LANGUAGE FlexibleInstances, PolyKinds, RankNTypes  #-}
+{-# LANGUAGE ScopedTypeVariables, UndecidableInstances #-}
 -- | Really unsafe module to provide internal interface.
 -- This module should be imported if you wish to allow the unsafe computation globally.
 --
