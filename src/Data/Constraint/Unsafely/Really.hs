@@ -8,7 +8,6 @@
 module Data.Constraint.Unsafely.Really (
   ReallyUnsafely, Unsafely, unsafely
   ) where
-import Data.Proxy
 import Unsafe.Coerce
 
 -- | The trick type-class to prevent providing global instances for @Unsafely@.
@@ -30,5 +29,5 @@ data Impossible (t :: k) = Impossible
 newtype Thingy t a = Thingy (Unsafely t => a)
 
 -- | Evaluate the value which might be unsafe.
-unsafely :: forall t a. Proxy t -> (Unsafely t => a) -> a
+unsafely :: forall proxy t a. proxy t -> (Unsafely t => a) -> a
 unsafely _ f = unsafeCoerce (Thingy f :: Thingy t a) Impossible
