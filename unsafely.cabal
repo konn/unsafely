@@ -1,5 +1,5 @@
 name:                unsafely
-version:             0.1.0.0.1
+version:             0.2.0.0
 synopsis:            Flexible access control for unsafe operations and instances
 description:         This module aims at providing simple interface to control the acccess for /unsafe/
                      operations and instance.
