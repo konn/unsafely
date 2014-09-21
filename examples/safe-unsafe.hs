@@ -1,4 +1,5 @@
 {-# LANGUAGE FlexibleContexts, FlexibleInstances, UndecidableInstances #-}
+{-# LANGUAGE RankNTypes #-}
 module Main where
 import Data.Constraint.Unsafely
 import Data.IORef
